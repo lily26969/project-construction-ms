@@ -1,1 +1,1 @@
-# project-construction-ms
+ managing construction projects and studies, developed using Spring Boot for the backend and Angular for the frontend. It aims to streamline the management of construction projects and their associated studies, providing a robust system to track various project details and the studies related to them.
