@@ -10,8 +10,8 @@ This project is a microservices-based Construction Management System designed to
 project-construction-ms/
 ├── Back/                  # Backend microservices
 │   ├── user-service/      # User management service
-│   ├── project-service/   # Project planning service
-│   ├── ...                # Other domain-specific services
+│   ├── reclamation-service/   # Project planning service
+│   ├── reponse-service                # Other domain-specific services
 ├── config-server/         # Centralized config for all services
 ├── discovery/             # Eureka service registry
 ├── gateway/               # API Gateway for routing and security
@@ -25,7 +25,7 @@ project-construction-ms/
 - **Eureka** (Service Discovery)
 - **Spring Cloud Gateway** (Routing)
 - **Spring Security + Keycloak** (Authentication & Authorization)
-- **PostgreSQL** (Database)
+- **MYSQL** (Database)
 - **Docker & Docker Compose** (Containerized deployment)
 - **Lombok**, **MapStruct**, **JPA/Hibernate**
 
@@ -38,7 +38,7 @@ project-construction-ms/
 - Java 17+
 - Maven
 - Docker & Docker Compose (recommended)
-- PostgreSQL
+- MYSQL
 
 ### Running the Project
 
@@ -107,7 +107,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👩‍💻 Maintained by
 
-**Moncef Halleb** – [GitHub Profile](https://github.com/lily26969)
+**Moncef Halleb** – [GitHub Profile](https://github.com/MoncefHalleb)
 
 ---
 
