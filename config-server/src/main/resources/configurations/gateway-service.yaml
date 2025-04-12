@@ -1,16 +1,23 @@
 server:
-  port: 8222
+  port: 8088
 spring:
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
             - Path=/api/service/user/**
+
+        - id: reclamation-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/services/reclamation/**
+
+        - id: reponse-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/services/reponse/**
 
 
       globalcors:

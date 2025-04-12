@@ -21,7 +21,7 @@ public class GeminiService {
     }
 
     public String generateAutoReply(String userMessage) {
-        String url = "/v1/models/gemini-pro:generateContent?key=" + GEMINI_API_KEY;
+        String url = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro-002:generateContent?key=" + GEMINI_API_KEY;
 
         Map<String, Object> requestBody = Map.of(
                 "contents", List.of(
