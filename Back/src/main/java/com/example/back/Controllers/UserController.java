@@ -7,6 +7,7 @@ import com.example.back.ExceptionHandling.ApiResponse;
 import com.example.back.SecurityConfig.KeycloakConfig;
 import com.example.back.ServiceImp.UserLoginTrackingService;
 import com.example.back.Services.UserService;
+import com.example.back.dto.UserDTO;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -76,6 +77,28 @@ public class UserController {
             }
         }
     }
+    @GetMapping("/GetUserDTOByUserName/{username}")
+    public ResponseEntity<UserDTO> getUserDTOByUsername(@PathVariable String username) {
+        User user = userService.GetUserByUserName(username);
+        if (user == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+
+        UserDTO userDTO = UserDTO.builder()
+                .id_User(user.getId_User())
+                .login(user.getLogin())
+                .email(user.getEmail())
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .role(user.getRole())
+                .num_tel(user.getNum_tel())
+                .keycloakId(user.getKeycloakId())
+                .image(user.getImage())
+                .build();
+
+        return ResponseEntity.ok(userDTO);
+    }
+
 
 
     @PutMapping("/UpdateUser")

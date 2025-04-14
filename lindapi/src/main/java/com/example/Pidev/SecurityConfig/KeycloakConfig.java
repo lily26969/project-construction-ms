@@ -1,4 +1,4 @@
-    package com.example.back.SecurityConfig;
+    package com.example.Pidev.SecurityConfig;
 
     import com.maxmind.geoip2.DatabaseReader;
     import com.maxmind.geoip2.model.CityResponse;
@@ -6,15 +6,15 @@
     import jakarta.ws.rs.client.ClientBuilder;
     import jakarta.ws.rs.client.Invocation;
     import jakarta.ws.rs.client.WebTarget;
+    import jakarta.ws.rs.core.MediaType;
+    import jakarta.ws.rs.core.Response;
     import lombok.extern.slf4j.Slf4j;
+    import org.json.JSONArray;
     import org.json.JSONObject;
     import org.keycloak.OAuth2Constants;
     import org.keycloak.admin.client.Keycloak;
     import org.keycloak.admin.client.KeycloakBuilder;
     import org.keycloak.representations.idm.UserRepresentation;
-    import jakarta.ws.rs.core.MediaType;
-    import org.json.JSONArray;
-    import jakarta.ws.rs.core.Response;
 
     import java.io.File;
     import java.net.InetAddress;

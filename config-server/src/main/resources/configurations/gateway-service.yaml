@@ -1,5 +1,6 @@
 server:
   port: 8088
+
 spring:
   cloud:
     gateway:
@@ -19,11 +20,30 @@ spring:
           predicates:
             - Path=/api/services/reponse/**
 
+        - id: shop-service
+          uri: lb://SHOP-SERVICE
+          predicates:
+            - Path=/articles/**
+
+        - id: order-service
+          uri: lb://SHOP-SERVICE
+          predicates:
+            - Path=/orders/**
+        - id: basket-service
+          uri: lb://SHOP-SERVICE
+          predicates:
+            - Path=/basket/**
+        - id: order-service
+          uri: lb://SHOP-SERVICE
+          predicates:
+            - Path=/reports/**
+
+
 
       globalcors:
         cors-configurations:
           '[/**]':
-            allowed-origins: "http://localhost:4200" # Allow requests from Angular app
+            allowed-origins: "http://localhost:4200"
             allowed-methods:
               - GET
               - POST
@@ -32,4 +52,4 @@ spring:
               - OPTIONS
             allowed-headers: "*"
             allow-credentials: true
-            max-age: 3600 # Cache preflight response for 1 hour
+            max-age: 3600
