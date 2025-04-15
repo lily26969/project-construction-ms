@@ -1,0 +1,12 @@
+tn\esprit\tpfoyer\services\EtudeService.class
+tn\esprit\tpfoyer\models\Project.class
+tn\esprit\tpfoyer\TpFoyerApplication.class
+tn\esprit\tpfoyer\controllers\EtudeController.class
+tn\esprit\tpfoyer\CorsConfig\WebConfig$1.class
+tn\esprit\tpfoyer\repositories\ProjectRepository.class
+tn\esprit\tpfoyer\services\EmailSenderService.class
+tn\esprit\tpfoyer\repositories\EtudeRepository.class
+tn\esprit\tpfoyer\CorsConfig\WebConfig.class
+tn\esprit\tpfoyer\controllers\ProjectController.class
+tn\esprit\tpfoyer\services\ProjectService.class
+tn\esprit\tpfoyer\models\Etude.class
