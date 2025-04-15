@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -9,6 +10,10 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/../../linda/backlinda/lindapi/pom.xml" />
         <option value="$PROJECT_DIR$/lindapi/pom.xml" />
+        <option value="$PROJECT_DIR$/../../project-construction-ms-finance/project-construction-ms-finance/finance-service-web/pom.xml" />
+        <option value="$PROJECT_DIR$/finance-service-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tp-foyer (3)/tp-foyer/pom.xml" />
+        <option value="$PROJECT_DIR$/tp-foyer/pom.xml" />
       </list>
     </option>
   </component>
