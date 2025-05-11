@@ -215,4 +215,23 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 Want to contribute or report a bug?  
 Open a pull request or contact the team!
 
+## 🤝 Contact & Connect
+
+We’re always open to feedback, collaborations, and new ideas!  
+Feel free to reach out or connect with the MRAMMA team:
+
+| Name              | Role/Module                          | Contact                                    | LinkedIn / GitHub           |
+| ----------------- | ------------------------------------ | ------------------------------------------ | --------------------------- |
+| **Moncef Halleb** | User & Role Management, Claim System | [Email](mailto:moncef.halleb@esprit.tn)    | [LinkedIn](www.linkedin.com/in/moncef-halleb-a01a75237
+
+) / [GitHub](https://github.com/MoncefHalleb) |
+| Linda Mlika       | Marketplace Module                   | [Email](mailto:linda.mlika@esprit.tn)      | [LinkedIn](#) / [GitHub](#) |
+| Yasmine Mechmech  | Financial Tracker                    | [Email](mailto:yasmine.mechmech@esprit.tn) | [LinkedIn](#) / [GitHub](#) |
+| Moataz Benchikh   | Task Planning & Alerts               | [Email](mailto:moataz.benchikh@esprit.tn)  | [LinkedIn](#) / [GitHub](#) |
+| Balkis Barhoumi   | HR Module                            | [Email](mailto:balkis.barhoumi@esprit.tn)  | [LinkedIn](#) / [GitHub](#) |
+| Ilyess Saidi      | Project & Study Management           | [Email](mailto:ilyess.saidi@esprit.tn)     | [LinkedIn](#) / [GitHub](#) |
+
+> ✉️ **General Inquiries**: [moncef.halleb@esprit.tn](mailto:moncef.halleb@esprit.tn)
+
+
 ---
