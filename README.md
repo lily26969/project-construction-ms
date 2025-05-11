@@ -54,11 +54,11 @@ Despite the availability of tools like **Procore**, **PlanGrid**, and **Buildert
 
 ## 🚀 Proposed Solution
 
-MRAMMA delivers an all-in-one cloud-ready construction platform with:
+MRAMMA delivers an all-in-one construction platform with:
 
 - 📦 **Modular Architecture** – each feature is a plug-and-play microservice
 - 🔐 **Enterprise-grade security** using **Keycloak**
-- 📊 **Real-time dashboards** for finances, tasks, and KPIs
+- 📊 **Real-time dashboards** for finances, tasks
 - 🛍️ **Built-in online marketplace** for tools and rental equipment
 - 🧠 **Smart budgeting, tracking, and forecasting**
 
