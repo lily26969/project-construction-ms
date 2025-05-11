@@ -19,8 +19,7 @@ MRAMMA is an all-in-one intelligent construction management platform built to tr
 - [🖥️ Live Demo](#-live-demo)
 - [👨‍💻 Team](#-team)
 - [📄 License](#-license)
--  [📄 contact](#-Contact&Connect)
-
+- [🤝 Contact & Connect](#-contact--connect)
 
 ---
 
@@ -88,42 +87,43 @@ We use **Keycloak** for secure authentication and authorization. It supports:
 
 ### 🔧 Realms & Clients
 
-| Realm Name           | Purpose                         |
-|----------------------|----------------------------------|
+| Realm Name           | Purpose                              |
+|----------------------|---------------------------------------|
 | `constructionRealm`  | Main authentication realm for MRAMMA |
-| `admin-console`      | Default admin realm              |
+| `admin-console`      | Default admin realm                  |
 
-| Client ID            | Use Case                         |
-|----------------------|----------------------------------|
-| `frontapp`    | Angular frontend (public client) |
+| Client ID     | Use Case                              |
+|---------------|----------------------------------------|
+| `frontapp`    | Angular frontend (public client)       |
 | `backapp`     | Spring Boot backend (confidential client) |
 
 ### ▶️ How to Run Keycloak Locally
 
 1. **Download and extract Keycloak (v23.0.6)**  
-   [https://www.keycloak.org/downloads](https://www.mediafire.com/folder/3ivnej0a1kwfq/keycloak-23.04666666)
+   [Download from Mediafire](https://www.mediafire.com/folder/3ivnej0a1kwfq/keycloak-23.04666666)
 
 2. **Start Keycloak in development mode**  
    ```bash
    cd keycloak-23.0.6/bin
    ./kc.sh start-dev
    ```
-      ```cmd
+   Or for Windows:
+   ```cmd
    cd keycloak-23.0.6/bin
    kc.bat start-dev
    ```
 
 3. **Login to Admin Console**  
-   http://localhost:8080  
-   (Default: `admin / admin` unless changed)
+   Visit: [http://localhost:8080](http://localhost:8080)  
+   Default credentials: `admin / admin`
 
 4. **Import Realm & Clients (Optional)**  
-   Use the exported `constructionRealm-realm.json` (available in `/realms/`)  
-   > Settings → Import → Select JSON
+   Use the exported `constructionRealm-realm.json` via  
+   **Admin Console → Realm Settings → Import**
 
 5. **Frontend & Backend Configuration**
-   - Frontend uses `keycloak-js` to connect to the `frontapp` public client.
-   - Backend uses `spring-boot-starter-oauth2-resource-server` with the `backapp` confidential client via the keycloak config file .
+   - Angular frontend uses `keycloak-js` with `frontapp` client.
+   - Spring Boot backend uses `backapp` with Keycloak adapter.
 
 ---
 
@@ -131,91 +131,59 @@ We use **Keycloak** for secure authentication and authorization. It supports:
 
 ### 🔌 Logical Architecture
 
-- **Frontend (Angular)** handles UI/UX, routing, form validation, and user interactions.
-- **Backend (Spring Boot)** serves RESTful endpoints for all modules: Auth, Claims, Projects, Tasks, HR, Finance, and Shop.
-- **Keycloak** manages identity, access control, and session security.
-- **MySQL** is the shared relational DB across all services (scalable per module).
+- **Frontend**: Angular SPA
+- **Backend**: Spring Boot RESTful APIs
+- **Security**: Keycloak for identity management
+- **Database**: MySQL
 
 ### 🌐 Physical Architecture
 
-- Microservices are containerized and exposed through a common gateway (planned).
-- Modular services can scale independently.
+- Modular microservices structure
+- Future-ready for containerized deployment and horizontal scaling
 
 ---
 
 ## ✅ Key Functional Modules
 
-### 🔐 User & Role Management
-- Signup/login using **Keycloak**
-- Profile management with editable info and avatar
-- Role-based access (Admin, Manager, Engineer, Employee)
-
-### 🧾 Claim & Rating System
-- Submit service claims (defects, delays)
-- Rate contractors and service quality
-- Admin dashboard for claim moderation
-
-### 🏗️ Project & Study Management
-- Create and manage construction projects
-- Attach plans, reports, blueprints
-- Evaluate feasibility, risks, and deadlines
-
-### 📋 Task Planning & Alerts
-- Assign tasks, set deadlines
-- Automatic reminders and missed-deadline notifications
-- Task progress tracker (real-time)
-
-### 🛒 Marketplace Module
-- Order tools, materials, and rentals online
-- Handle inventory levels and vendor orders
-- Track stock availability in real-time
-
-### 💸 Financial Tracker
-- Real-time expense monitoring
-- Estimated vs actual cost comparisons
-- Role-secured access to sensitive budgets
-
-### 👥 HR Module
-- Employee onboarding, profile management
-- Leave requests and approvals
-- Performance tracking and reviews
+- **User & Role Management**
+- **Claim & Rating System**
+- **Project & Study Management**
+- **Task Planning & Real-Time Alerts**
+- **Online Marketplace**
+- **Financial Tracking**
+- **HR & Leave Management**
 
 ---
 
 ## 🖥️ Live Demo
 
-> 🧪 Localhost for development:
 ```
 Frontend: http://localhost:4200  
-Backend APIs: http://localhost:8088/api  
-Keycloak Console: http://localhost:8080  
+Backend API: http://localhost:8088/api  
+Keycloak: http://localhost:8080  
 ```
 
 ---
 
 ## 👨‍💻 Team
 
-Developed by a passionate cross-functional team:
-
-- **Moncef Halleb** ( User & Role Management + Claim & Rating System)  
-- Linda Mlika ( Marketplace Module)  
-- Yasmine Mechmech ( Financial Tracker)  
-- Moataz Benchikh ( Task Planning & Alerts)  
-- Balkis Barhoumi (HR Module)  
-- Ilyess Saidi ( Project & Study Management)
+| Name              | Module                          |
+|-------------------|----------------------------------|
+| **Moncef Halleb** | User & Role Management, Claims   |
+| Linda Mlika       | Marketplace                     |
+| Yasmine Mechmech  | Financial Tracker               |
+| Moataz Benchikh   | Task Planning                   |
+| Balkis Barhoumi   | HR                              |
+| Ilyess Saidi      | Project & Study Management      |
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** – feel free to use, modify, and share with attribution.
+Licensed under the **MIT License**.  
+Use, modify, or redistribute with attribution.
 
 ---
-
-## 🤝 Contributions
-
-Want to contribute or report a bug?  
-Open a pull request or contact the team!
 
 ## 🤝 Contact & Connect
 
@@ -224,7 +192,7 @@ Feel free to reach out or connect with the MRAMMA team:
 
 | Name              | Role/Module                          | Contact                                    | LinkedIn / GitHub           |
 | ----------------- | ------------------------------------ | ------------------------------------------ | --------------------------- |
-| **Moncef Halleb** | User & Role Management, Claim System | [Email](mailto:moncef.halleb@esprit.tn)    | [LinkedIn](www.linkedin.com/in/moncef-halleb-a01a75237) / [GitHub](https://github.com/MoncefHalleb) |
+| **Moncef Halleb** | User & Role Management, Claim System | [Email](mailto:moncef.halleb@esprit.tn)    | [LinkedIn](https://www.linkedin.com/in/moncef-halleb-a01a75237) / [GitHub](https://github.com/MoncefHalleb) |
 | Linda Mlika       | Marketplace Module                   | [Email](mailto:linda.mlika@esprit.tn)      | [LinkedIn](#) / [GitHub](#) |
 | Yasmine Mechmech  | Financial Tracker                    | [Email](mailto:yasmine.mechmech@esprit.tn) | [LinkedIn](#) / [GitHub](#) |
 | Moataz Benchikh   | Task Planning & Alerts               | [Email](mailto:moataz.benchikh@esprit.tn)  | [LinkedIn](#) / [GitHub](#) |
@@ -232,6 +200,3 @@ Feel free to reach out or connect with the MRAMMA team:
 | Ilyess Saidi      | Project & Study Management           | [Email](mailto:ilyess.saidi@esprit.tn)     | [LinkedIn](#) / [GitHub](#) |
 
 > ✉️ **General Inquiries**: [moncef.halleb@esprit.tn](mailto:moncef.halleb@esprit.tn)
-
-
----
