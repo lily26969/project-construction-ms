@@ -19,6 +19,8 @@ MRAMMA is an all-in-one intelligent construction management platform built to tr
 - [🖥️ Live Demo](#-live-demo)
 - [👨‍💻 Team](#-team)
 - [📄 License](#-license)
+-  [📄 contact](#-contact)
+
 
 ---
 
