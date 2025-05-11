@@ -193,12 +193,12 @@ Keycloak Console: http://localhost:8080
 
 Developed by a passionate cross-functional team:
 
-- **Moncef Halleb** (Full-Stack Developer, Project Lead)  
-- Linda Mlika (UI/UX, Testing)  
-- Yasmine Mechmech (Frontend, QA)  
-- Moataz Benchikh (Backend Dev, Planning)  
-- Balkis Barhoumi (HR + Shop Module)  
-- Ilyess Saidi (Finance & Task Logic)
+- **Moncef Halleb** ( User & Role Management + Claim & Rating System)  
+- Linda Mlika ( Marketplace Module)  
+- Yasmine Mechmech ( Financial Tracker)  
+- Moataz Benchikh ( Task Planning & Alerts)  
+- Balkis Barhoumi (HR Module)  
+- Ilyess Saidi ( Project & Study Management)
 
 ---
 
