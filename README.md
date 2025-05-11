@@ -72,8 +72,6 @@ MRAMMA delivers an all-in-one construction platform with:
 | 🔙 Backend            | Spring Boot (REST API)                 |
 | 🔐 Authentication     | Keycloak (self-hosted)                 |
 | 🗃️ Database           | MySQL                                  |
-| 🐳 Containerization   | Docker (coming soon)                   |
-| 📈 Monitoring         | NGX Charts / Chart.js                  |
 
 ---
 
