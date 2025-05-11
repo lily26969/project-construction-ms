@@ -95,8 +95,8 @@ We use **Keycloak** for secure authentication and authorization. It supports:
 
 | Client ID            | Use Case                         |
 |----------------------|----------------------------------|
-| `mramma-frontend`    | Angular frontend (public client) |
-| `mramma-backend`     | Spring Boot backend (confidential client) |
+| `frontapp`    | Angular frontend (public client) |
+| `backapp`     | Spring Boot backend (confidential client) |
 
 ### ▶️ How to Run Keycloak Locally
 
@@ -106,7 +106,11 @@ We use **Keycloak** for secure authentication and authorization. It supports:
 2. **Start Keycloak in development mode**  
    ```bash
    cd keycloak-23.0.6/bin
-   ./kc.bat start-dev
+   ./kc.sh start-dev
+   ```
+      ```cmd
+   cd keycloak-23.0.6/bin
+   kc.bat start-dev
    ```
 
 3. **Login to Admin Console**  
@@ -118,8 +122,8 @@ We use **Keycloak** for secure authentication and authorization. It supports:
    > Settings → Import → Select JSON
 
 5. **Frontend & Backend Configuration**
-   - Frontend uses `keycloak-js` to connect to the `mramma-frontend` public client.
-   - Backend uses `spring-boot-starter-oauth2-resource-server` with the `mramma-backend` confidential client.
+   - Frontend uses `keycloak-js` to connect to the `frontapp` public client.
+   - Backend uses `spring-boot-starter-oauth2-resource-server` with the `backapp` confidential client via the keycloak config file .
 
 ---
 
