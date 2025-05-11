@@ -223,7 +223,6 @@ Feel free to reach out or connect with the MRAMMA team:
 | Name              | Role/Module                          | Contact                                    | LinkedIn / GitHub           |
 | ----------------- | ------------------------------------ | ------------------------------------------ | --------------------------- |
 | **Moncef Halleb** | User & Role Management, Claim System | [Email](mailto:moncef.halleb@esprit.tn)    | [LinkedIn](www.linkedin.com/in/moncef-halleb-a01a75237
-
 ) / [GitHub](https://github.com/MoncefHalleb) |
 | Linda Mlika       | Marketplace Module                   | [Email](mailto:linda.mlika@esprit.tn)      | [LinkedIn](#) / [GitHub](#) |
 | Yasmine Mechmech  | Financial Tracker                    | [Email](mailto:yasmine.mechmech@esprit.tn) | [LinkedIn](#) / [GitHub](#) |
